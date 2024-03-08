@@ -9,3 +9,4 @@ WHERE job_id = 'IT_PROG';
 SELECT *
 FROM employees
 WHERE last_name = 'King';
+--.
