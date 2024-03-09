@@ -9,4 +9,4 @@ WHERE job_id = 'IT_PROG';
 SELECT *
 FROM employees
 WHERE last_name = 'King';
---.
+-- 푸시 되는지 2차 확인용.
