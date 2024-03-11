@@ -12,7 +12,7 @@ FROM
     employees;
     
 SELECT 
-    emplyees_id,
+    employee_id,
     first_name,
     last_name
 FROM
