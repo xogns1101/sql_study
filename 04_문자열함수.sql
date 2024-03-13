@@ -94,10 +94,11 @@ EMPLOYEES 테이블에서 이름, 입사일자 컬럼으로 변경(별칭)해서 이름순으로 오름차순 
 조건 2) 입사일자 컬럼은 xx/xx/xx로 저장되어 있습니다. xxxxxx형태로 변경해서 출력합니다. (REPLACE)
 */
 SELECT
-    CONCAT(first_name, last_name) AS ???,
-    REPLACE(hire_date, '/', '') AS ???????
+    CONCAT(first_name, last_name) AS 이름,
+    REPLACE(hire_date, '/', '') AS 입사일자
 FROM employees
-ORDER BY ??? ASC;
+ORDER BY 이름 ASC;
+
 
 
 /*
