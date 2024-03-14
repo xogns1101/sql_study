@@ -171,12 +171,12 @@ SELECT
     ROWNUM AS rn, tbl.*
     FROM
     (
-    SELECT 
+    SELECT
         employee_id, first_name, salary
     FROM employees
     ORDER BY salary DESC
-    )tbl
-WHERE rn > 10 AND rn <= 20;    
+    ) tbl
+WHERE rn > 10 AND rn <= 20;
 
 /*
 가장 안쪽 SELECT 절에서 필요한 테이블 형식(인라인 뷰)을 생성.
@@ -203,13 +203,13 @@ SELECT *
 WHERE rn > 20 AND rn <= 30;    
 
 SELECT 
-        e.employee_id, e.salary, 
-        avg_salaries.average_salary
+    e.employee_id, e.salary, 
+    avg_salaries.average_salary
 FROM employees e JOIN
 (SELECT 
-        department_id, 
-        AVG(salary) AS avarage_salary 
+    department_id, 
+    AVG(salary) AS average_salary 
 FROM 
     employees 
 GROUP BY department_id) avg_salaries
-ON e.department_id = avg_salaries.department_id;    
+ON e.department_id = avg_salaries.department_id;
